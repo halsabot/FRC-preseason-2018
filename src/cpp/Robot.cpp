@@ -12,25 +12,16 @@ class Robot: public IterativeRobot {
 public:
     Robot() { }
 
-    void RobotInit() {
-
-  	RobotDrive *myDrive;
-  	Joystick *driveStick;
-    }
+    void RobotInit() {}
 
     void DisabledInit() { }
     void AutonomousInit() { }
-    void TeleopInit() {
-    myDrive = new RobotDrive(1,2,3,4);
-		driveStick = new Joystick(1);
-    }
+    void TeleopInit() { }
     void TestInit() { }
 
     void DisabledPeriodic() { }
     void AutonomousPeriodic() { }
-    void TeleopPeriodic() {
-    myDrive->ArcadeDrive(driveStick);
-  }
+    void TeleopPeriodic() { }
     void TestPeriodic() { }
 };
 
